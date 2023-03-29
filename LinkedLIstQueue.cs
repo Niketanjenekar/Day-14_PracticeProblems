@@ -40,25 +40,18 @@ namespace Day14_PracticeProblems
 
         }
 
-        internal void Peak()
+        public void Dequeue()
         {
-            if (this.head == null)
+            if (head == null)
             {
-                Console.WriteLine("Queue seems empty");
+                Console.WriteLine("Queue is empty,Dequeue is not possible.");
                 return;
             }
-            Console.WriteLine("{0} is in the head of the Queue", this.head.data);
-        }
-
-        internal void Pop()
-        {
-            if (this.head == null)
+            while (head != null)
             {
-                Console.WriteLine("Queue has been emptyed, Further Deletion is not possible");
-                return;
+                Console.WriteLine($"Value dequeue is {head.data}");
+                head = head.next;
             }
-            Console.WriteLine("Value popped from the Queue is {0}", this.head.data);
-            this.head = this.head.next;
         }
     }
 }
