@@ -8,21 +8,12 @@ namespace Day14_PracticeProblems
         {
             Console.WriteLine("Welcome to Stack and Queue Problems: ");
 
-            Linkedlist linkedlist = new Linkedlist();
-            linkedlist.Push(56);
-            linkedlist.Push(30);
-            linkedlist.Push(70);
-
-            Console.WriteLine("**************************************************");
-            Console.WriteLine("Now the stack contains : ");
+            //Linkedlist linkedlist = new Linkedlist();
+            LinkedLIstQueue linkedlist = new LinkedLIstQueue();
+            linkedlist.Enqueue(56);
+            linkedlist.Enqueue(30);
+            linkedlist.Enqueue(70);
 
             linkedlist.Display();
-
-            linkedlist.Peak();
-            linkedlist.Pop();
-
-            linkedlist.Display();
-            linkedlist.Peak();
-        }
     }
 }
