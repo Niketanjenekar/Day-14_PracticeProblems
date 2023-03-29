@@ -13,7 +13,16 @@ namespace Day14_PracticeProblems
             linkedlist.Push(30);
             linkedlist.Push(70);
 
+            Console.WriteLine("**************************************************");
+            Console.WriteLine("Now the stack contains : ");
+
             linkedlist.Display();
+
+            linkedlist.Peak();
+            linkedlist.Pop();
+
+            linkedlist.Display();
+            linkedlist.Peak();
         }
     }
 }

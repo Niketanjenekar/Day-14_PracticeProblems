@@ -46,6 +46,26 @@ namespace Day14_PracticeProblems
 
         }
 
+        internal void Peak()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack seems empty");
+                return;
+            }
+            Console.WriteLine("{0} is in the top of the stack", this.top.data);
+        }
+
+        internal void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("Stack has been emptyed, Further Deletion is not possible");
+                return;
+            }
+            Console.WriteLine("Value popped from the stack is {0}", this.top.data);
+            this.top = this.top.next;
+        }
 
     }
 }
